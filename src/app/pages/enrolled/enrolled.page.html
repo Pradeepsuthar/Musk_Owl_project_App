@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Enrolled</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<super-tabs>
+  <super-tabs-toolbar slot="top" color="light">
+    <super-tab-button>
+      <ion-label>Pending</ion-label>
+    </super-tab-button>
+    <super-tab-button>
+      <ion-label>Approved</ion-label>
+    </super-tab-button>
+  </super-tabs-toolbar>
+
+  <super-tabs-container>
+
+    <super-tab>
+      <ion-content>
+        <!-- Pending -->
+        <ion-nav [root]="pending"></ion-nav>
+      </ion-content>
+    </super-tab>
+
+    <super-tab >
+      <ion-content>
+        <!-- Approved -->
+        <ion-nav [root]="approved"></ion-nav>
+      </ion-content>
+    </super-tab>
+    
+  </super-tabs-container>
+</super-tabs>

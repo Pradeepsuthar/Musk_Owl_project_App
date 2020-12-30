@@ -1,0 +1,57 @@
+.height{
+    height: 100%;
+}
+.padding{
+    padding: 25px 0px 25px 20px;
+}
+.card{
+    --background: rgb(63, 177, 253) !important;
+    margin: 0;
+    border-radius: 0;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.grid-padding{
+    padding: 0;
+
+}
+.col-margin{
+    margin-bottom: -4px;
+}
+.col-padding{
+    padding: 10px 0 0px 20px;
+}
+.card-title{
+    font-size: 13px;
+    color: white;
+}
+.card-subtitle{
+    margin: 0;
+}
+.card-content{
+    font-size: 11px;
+    color: white;
+}
+.description-div{
+    background-color:rgb(63, 177, 253) ;
+    padding: 10px;
+}
+.title{
+    padding: 10px 0;
+    color: white;
+    font-size: 14px;
+    letter-spacing: .5px;
+}
+.text{
+    color: rgb(228, 227, 227);
+    font-size: 12px
+}
+.input-field{
+    margin-bottom: 12px;
+}
+.btn {
+    border: 1.5px solid white; 
+    border-radius: 0;
+    --background:transparent; 
+    --border-radius: 0px;
+}

@@ -4,9 +4,10 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { FolderPageRoutingModule } from './folder-routing.module';
+import { IssuesPageRoutingModule } from './issues-routing.module';
 
-import { FolderPage } from './folder.page';
+import { IssuesPage } from './issues.page';
+import { SuperTabsModule } from '@ionic-super-tabs/angular';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
@@ -15,8 +16,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     FormsModule,
     IonicModule,
     FlexLayoutModule,
-    FolderPageRoutingModule
+    SuperTabsModule,
+    IssuesPageRoutingModule
   ],
-  declarations: [FolderPage]
+  declarations: [IssuesPage]
 })
-export class FolderPageModule {}
+export class IssuesPageModule {}

@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Issues</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<super-tabs>
+  <super-tabs-toolbar slot="top" color="light">
+    <super-tab-button class="padding">
+      <!-- <ion-icon name="paper" ></ion-icon> -->
+      <ion-label class="lowercase">my issues</ion-label>
+    </super-tab-button>
+    <super-tab-button class="padding">
+      <!-- <ion-icon name="add" ></ion-icon> -->
+      <ion-label class="lowercase">new issues</ion-label>
+    </super-tab-button>
+    <super-tab-button class="padding">
+      <!-- <ion-icon name="paper" ></ion-icon> -->
+      <ion-label class="lowercase">in progress</ion-label>
+    </super-tab-button>
+    <super-tab-button class="padding">
+      <!-- <ion-icon name="add" ></ion-icon> -->
+      <ion-label class="lowercase">completed</ion-label>
+    </super-tab-button>
+  </super-tabs-toolbar>
+
+  <super-tabs-container>
+
+    <super-tab>
+      <ion-content>
+        <!-- My Issues -->
+        <ion-nav [root]="myIssues"></ion-nav>
+      </ion-content>
+    </super-tab>
+
+    <super-tab >
+      <ion-content>
+        <!-- New Issues -->
+        <ion-nav [root]="newIssues"></ion-nav>
+      </ion-content>
+    </super-tab>
+    
+    <super-tab>
+      <ion-content>
+        <!-- In Progress -->
+        <ion-nav [root]="inProgress"></ion-nav>
+      </ion-content>
+    </super-tab>
+
+    <super-tab >
+      <ion-content>
+        <!-- Completed -->
+        <ion-nav [root]="completed"></ion-nav>
+      </ion-content>
+    </super-tab>
+  </super-tabs-container>
+</super-tabs>

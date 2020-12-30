@@ -11,13 +11,18 @@ import { AppRoutingModule } from './app-routing.module';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { NativeGeocoder } from '@ionic-native/native-geocoder/ngx';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { SuperTabsModule } from '@ionic-super-tabs/angular';
+
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [
     BrowserModule,
     IonicModule.forRoot(),
-    AppRoutingModule
+    AppRoutingModule,
+    SuperTabsModule.forRoot(),
+    FlexLayoutModule 
   ],
   providers: [
     StatusBar,
