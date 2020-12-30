@@ -54,7 +54,19 @@ const routes: Routes = [
   {
     path: 'settings',
     loadChildren: () => import('./pages/settings/settings.module').then( m => m.SettingsPageModule)
+  },  {
+    path: 'select-issue-categories',
+    loadChildren: () => import('./pages/select-issue-categories/select-issue-categories.module').then( m => m.SelectIssueCategoriesPageModule)
+  },
+  {
+    path: 'distance',
+    loadChildren: () => import('./pages/distance/distance.module').then( m => m.DistancePageModule)
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   }
+
 
 
 
