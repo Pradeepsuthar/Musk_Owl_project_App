@@ -1,0 +1,96 @@
+<ion-searchbar class="searchbar"></ion-searchbar>
+
+<lib-ionic-pullup (onExpand)="footerExpanded()" (onCollapse)="footerCollapsed()" [(state)]="footerState" [toolbarTopMargin]="100" [minBottomVisible]="200">
+  <ion-row text-center>
+    <ion-col col-3></ion-col>
+      <ion-col  col-2>
+        <ion-fab-button color="warning">GET
+        </ion-fab-button>
+      </ion-col>
+      <ion-col  col-2>
+        <ion-fab-button color="danger" (click)="toggleFooter()" #ionDragFooter>
+        </ion-fab-button>
+      </ion-col>
+      <ion-col  col-2>
+        <ion-fab-button color="secondary">GIVE
+        </ion-fab-button>
+      </ion-col>
+      <ion-col col-3></ion-col>
+  </ion-row>
+
+  
+
+  <div class="card-div" fxLayout="column" fxLayoutAlign="center center">
+    <ion-card fxLayout="row" class="person-card">
+      <div  fxLayoutAlign="start" class="img-div">
+        <img class="img-width" src="assets/images/macclary.jpg">
+      </div> 
+      <ion-grid class="padding">
+        <ion-row style="height: 100%;">
+          <ion-col size="7" class="padding padding-left" fxLayoutAlign="center start" fxLayout="column">
+            <ion-card-subtitle class="card-subtitle">CLAUDIA JOHN</ion-card-subtitle>
+            <ion-card-title class="card-title"><b>ACCIDENT</b></ion-card-title>
+          </ion-col>
+          <ion-col size="5" class="padding" fxLayoutAlign="center start" fxLayout="column">
+            <ion-card-subtitle class="card-subtitle">4.5 K</ion-card-subtitle>
+            <ion-card-title class="card-title"><b>460 M</b></ion-card-title>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+    <ion-card fxLayout="row" class="person-card">
+      <div  fxLayoutAlign="start" class="img-div">
+        <img class="img-width" src="assets/images/macclary.jpg">
+      </div> 
+      <ion-grid class="padding">
+        <ion-row style="height: 100%;">
+          <ion-col size="7" class="padding padding-left" fxLayoutAlign="center start" fxLayout="column">
+            <ion-card-subtitle class="card-subtitle">CLAUDIA JOHN</ion-card-subtitle>
+            <ion-card-title class="card-title"><b>ACCIDENT</b></ion-card-title>
+          </ion-col>
+          <ion-col size="5" class="padding" fxLayoutAlign="center start" fxLayout="column">
+            <ion-card-subtitle class="card-subtitle">4.5 K</ion-card-subtitle>
+            <ion-card-title class="card-title"><b>460 M</b></ion-card-title>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+    <ion-card fxLayout="row" class="person-card">
+      <div  fxLayoutAlign="start" class="img-div">
+        <img class="img-width" src="assets/images/macclary.jpg">
+      </div> 
+      <ion-grid class="padding">
+        <ion-row style="height: 100%;">
+          <ion-col size="7" class="padding padding-left" fxLayoutAlign="center start" fxLayout="column">
+            <ion-card-subtitle class="card-subtitle">CLAUDIA JOHN</ion-card-subtitle>
+            <ion-card-title class="card-title"><b>ACCIDENT</b></ion-card-title>
+          </ion-col>
+          <ion-col size="5" class="padding" fxLayoutAlign="center start" fxLayout="column">
+            <ion-card-subtitle class="card-subtitle">4.5 K</ion-card-subtitle>
+            <ion-card-title class="card-title"><b>460 M</b></ion-card-title>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+    <ion-card fxLayout="row" class="person-card">
+      <div  fxLayoutAlign="start" class="img-div">
+        <img class="img-width" src="assets/images/macclary.jpg">
+      </div> 
+      <ion-grid class="padding">
+        <ion-row style="height: 100%;">
+          <ion-col size="7" class="padding padding-left" fxLayoutAlign="center start" fxLayout="column">
+            <ion-card-subtitle class="card-subtitle">CLAUDIA JOHN</ion-card-subtitle>
+            <ion-card-title class="card-title"><b>ACCIDENT</b></ion-card-title>
+          </ion-col>
+          <ion-col size="5" class="padding" fxLayoutAlign="center start" fxLayout="column">
+            <ion-card-subtitle class="card-subtitle">4.5 K</ion-card-subtitle>
+            <ion-card-title class="card-title"><b>460 M</b></ion-card-title>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card>
+  </div>  
+</lib-ionic-pullup>
+
+<div #map id="map">
+</div>
