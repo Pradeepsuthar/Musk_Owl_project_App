@@ -1,3 +1,20 @@
 .margin{
     margin-right: 10px;
 }
+
+ion-header {
+    border: none !important;
+    box-shadow: none !important;
+    &.header-md:after {
+      background: none;
+    }
+  }
+
+
+  ion-content{
+    ion-list{
+        ion-item{
+            background-color: red;
+        }
+    }
+  }

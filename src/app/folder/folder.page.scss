@@ -1,72 +1,180 @@
 ion-menu-button {
-  color: var(--ion-color-primary);
+	color: var(--ion-color-primary);
 }
 
-
 #map_canvas {
-  width: 100%;
-  height: 100%;
-  border: 1px solid red;
+	width: 100%;
+	height: 100%;
+	border: 1px solid red;
 }
 
 #address {
-  padding: 10px;
-  font-size: 18px;
-  font-weight: bold;
+	padding: 10px;
+	font-size: 18px;
+	font-weight: bold;
 }
-
 #map {
-  width: 100%;
-  height: 80%;
-}  
-
-.card-div{
-  position: absolute;
-  z-index: 1;
-  width: 100%;
+	width: 100%;
+	height: 100%;
 }
-.person-card{
-  margin: 25px;
-}
-.img-div{
-  width: 20%;
-}
-.padding{
-  padding: 0;
-}
-.row{
-  padding: 5px !important;
-}
-.card{
-  border-radius: 20px;
-  margin: 0;
-  margin-top: -40px;
-}
-.card-content{
-  font-size: 14px;
-  padding: 0;
-  margin-left: 10px;
-  margin-bottom: 15px;
-}
-.card-padding{
-  padding:10px;
-}
-.icon{
-  font-size: 42px !important;
-}
-.icon-label{
-  font-size: 8px;
-}
-.card-subtitle{
-  font-size: 14px;
-}
-.card-title{
-  font-size: 12px;
-}
-.img-width{
-  width: 100%;
-  padding: 0;
-}
-.padding-left{
-  padding-left: 8px;
+.app_body {
+	width: 100%;
+	height: 100vh;
+	.user_notify_card {
+		position: absolute;
+		top: 0;
+		z-index: 1;
+		padding: 20px 15px 0 15px;
+		.person_card {
+			.img_div {
+				width: 30%;
+			}
+			ion-grid {
+				ion-row {
+					.card-subtitle {
+						font-size: 14px;
+					}
+					.card-title {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+	}
+	.popup_card {
+    display: none;
+		width: 100%;
+		// height: 200px;
+		background: var(--ion-card-background);
+		color: var(--ion-card-color);
+		position: absolute;
+		bottom: 20%;
+		border-radius: 20px;
+		box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+		z-index: 2;
+		padding: 10px 20px;
+		.card_header {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			h4 {
+				font-size: 16px;
+			}
+		}
+		.card_footer {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			// padding: 10px 20px;
+			.like_icon {
+				ion-icon {
+					font-size: 30px;
+					color: red;
+				}
+			}
+			.btn {
+				display: inline-block;
+				font-weight: 400;
+				line-height: 1.5;
+				color: #212529;
+				text-align: center;
+				text-decoration: none;
+				vertical-align: middle;
+				cursor: pointer;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				user-select: none;
+				background-color: transparent;
+				border: 1px solid transparent;
+				padding: .375rem .75rem;
+				font-size: 1rem;
+				border-radius: .25rem;
+				transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out
+			}
+			.btn-primary {
+				color: #fff;
+				background-color: #0d6efd;
+				border-color: #0d6efd
+			}
+			.btn-primary:hover {
+				color: #fff;
+				background-color: #0b5ed7;
+				border-color: #0a58ca
+			}
+			.btn-check:focus+.btn-primary,
+			.btn-primary:focus {
+				color: #fff;
+				background-color: #0b5ed7;
+				border-color: #0a58ca;
+				outline: none;
+			}
+			.btn-check:active+.btn-primary,
+			.btn-check:checked+.btn-primary,
+			.btn-primary.active,
+			.btn-primary:active,
+			.show>.btn-primary.dropdown-toggle {
+				color: #fff;
+				background-color: #0a58ca;
+				border-color: #0a53be
+			}
+			.btn-primary.disabled,
+			.btn-primary:disabled {
+				color: #fff;
+				background-color: #0d6efd;
+				border-color: #0d6efd
+			}
+		}
+	}
+	.footer_menu_container {
+		width: 100%;
+		height: auto;
+		padding: 10px 5px;
+		position: absolute;
+		bottom: 0;
+		z-index: 1;
+		// background-color: rgba(255, 255, 255, 0.8);
+		background: var(--ion-card-background);
+		padding-top: 50px;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+	}
+	.footer__menu {
+		display: flex;
+		// justify-content: space-between;
+		align-items: center;
+		text-align: center;
+		overflow-x: scroll;
+		overflow-y: hidden;
+		width: 100%;
+		.footer_menu_item {
+			width: 100%;
+			margin: 0 20px;
+			display: grid;
+			text-align: center;
+			align-items: center;
+			justify-content: center;
+			// padding-left: 30px;
+			.icon {
+				font-size: 40px;
+				color: var(--ion-card-color);
+				margin-bottom: 5px;
+			}
+			span {
+				font-size: 8px;
+				color: var(--ion-card-color);
+			}
+		}
+		.footer_menu_item.active {
+			.icon {
+				color: var(--ion-color-primary);
+			}
+			span {
+				color: var(--ion-color-primary);
+			}
+		}
+	}
+	.footer__menu::-webkit-scrollbar {
+		display: none;
+	}
 }

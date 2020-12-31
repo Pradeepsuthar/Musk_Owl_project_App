@@ -1,10 +1,10 @@
 <ion-content>
-  <div class="height">
-    <div class="padding">
+  <div class="description_container">
+    <div class="description_header">
       <ion-card class="card">
         <ion-grid class="grid-padding">
           <ion-row>
-            <ion-col size="3" class="grid-padding col-margin">
+            <ion-col size="4" class="grid-padding col-margin">
               <img src="assets/images/macclary.jpg">
             </ion-col>
             <ion-col class="col-padding">
@@ -18,11 +18,13 @@
         </ion-grid>
       </ion-card>
     </div>
-    <div class="description-div">
+    <div class="description_body">
+      <!-- DESCRIPTION -->
       <ion-title class="title">DESCRIPTION</ion-title>
-      <ion-text class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</ion-text>
+      <ion-text class="text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+        been the industry's standard dummy text.</ion-text>
 
-      <form style="padding: 20px;" >
+      <form class="desc_form">
         <section class="input-field">
           <ion-button class="btn" size="medium" expand="block">EDIT PROFILE</ion-button>
         </section>
@@ -45,42 +47,67 @@
           <ion-input placeholder="DOCUMENTS"></ion-input>
         </ion-item>
       </form>
-<!--       
-      <ion-title style="padding: 10px 0;color: white;font-size: 14px;letter-spacing: .5px;">RATTINGS</ion-title>
-      <ion-grid style="padding: 0;">
-        <ion-row>
-          <ion-col size="7" style="padding: 0;">
-            <ion-title style="font-size: 12px;color: rgb(228, 227, 227);olor: white;margin-bottom: 10px;">ISSUES</ion-title>
-          </ion-col>
-          <ion-col style="padding: 0;margin-bottom: 10px;">
-            <ion-text>njknsdkn</ion-text>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col size="7" style="padding: 0;">
-            <ion-title style="font-size: 12px;color: rgb(228, 227, 227);margin-bottom: 10px;">EVENTS</ion-title>
-          </ion-col>
-          <ion-col style="padding: 0;margin-bottom: 10px;">
-            <ion-text>njknsdkn</ion-text>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col size="7" style="padding: 0;">
-            <ion-title style="font-size: 12px;color: rgb(228, 227, 227);margin-bottom: 10px;">ASK AROUND YOU</ion-title>
-          </ion-col>
-          <ion-col style="padding: 0;margin-bottom: 10px;">
-            <ion-text>njknsdkn</ion-text>
-          </ion-col>
-        </ion-row>
-        <ion-row>
-          <ion-col size="7" style="padding: 0;">
-            <ion-title style="font-size: 12px;color: rgb(228, 227, 227);margin-bottom: 10px;">EMERGENCY</ion-title>
-          </ion-col>
-          <ion-col style="padding: 0;margin-bottom: 10px;">
-            <ion-text>njknsdkn</ion-text>
-          </ion-col>
-        </ion-row>
-      </ion-grid> -->
+
+      <!-- RATTINGS -->
+      <div class="rating_container">
+        <ion-title class="title">RATTINGS</ion-title>
+        <ion-grid>
+          <ion-row>
+            <ion-col size="7" style="padding: 0;">
+              <ion-title class="rating_subtitle">ISSUES
+              </ion-title>
+            </ion-col>
+            <ion-col style="padding: 0;margin-bottom: 10px;">
+              <ion-text class="ratings_icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </ion-text>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="7" style="padding: 0;">
+              <ion-title class="rating_subtitle">EVENTS</ion-title>
+            </ion-col>
+            <ion-col style="padding: 0;margin-bottom: 10px;">
+              <ion-text class="ratings_icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </ion-text>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="7" style="padding: 0;">
+              <ion-title class="rating_subtitle">ASK AROUND YOU
+              </ion-title>
+            </ion-col>
+            <ion-col style="padding: 0;margin-bottom: 10px;">
+              <ion-text class="ratings_icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </ion-text>
+            </ion-col>
+          </ion-row>
+          <ion-row>
+            <ion-col size="7" style="padding: 0;">
+              <ion-title class="rating_subtitle">EMERGENCY</ion-title>
+            </ion-col>
+            <ion-col style="padding: 0;margin-bottom: 10px;">
+              <ion-text class="ratings_icons">
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+                <ion-icon name="star"></ion-icon>
+              </ion-text>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
     </div>
   </div>
 </ion-content>

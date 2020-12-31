@@ -1,7 +1,7 @@
 <ion-app>
   <ion-header translucent>
     <ion-toolbar>
-      <ion-title>Settings</ion-title>
+      <ion-title><a href="javascript:history.back()"><ion-icon name="arrow-back" class="back_btn"></ion-icon></a> <span>Settings</span></ion-title>
     </ion-toolbar>
     <ion-toolbar>
       <ion-searchbar></ion-searchbar>
@@ -25,9 +25,39 @@
         <ion-icon slot="end" size="medium" name="chevron-forward-outline"></ion-icon>
       </ion-item>
       <ion-item>
+        <ion-icon class="margin" name="pin-outline"></ion-icon>
+        <ion-label>ISSUSE DISTANCE</ion-label>
+        <ion-icon slot="end" size="medium" name="chevron-forward-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-icon class="margin" name="location-outline"></ion-icon>
+        <ion-label>EVENT DISTANCE</ion-label>
+        <ion-icon slot="end" size="medium" name="chevron-forward-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
         <ion-icon class="margin" name="notifications"></ion-icon>
         <ion-label>NOTIFICATION</ion-label>
         <ion-toggle slot="end" checked></ion-toggle>
+      </ion-item>
+      <ion-item>
+        <ion-icon class="margin" name="notifications-outline"></ion-icon>
+        <ion-label>PUSH NOTIFICATION</ion-label>
+        <ion-toggle slot="end"></ion-toggle>
+      </ion-item>
+      <ion-item>
+        <ion-icon class="margin" name="chatbox-outline"></ion-icon>
+        <ion-label>SMS</ion-label>
+        <ion-toggle slot="end"></ion-toggle>
+      </ion-item>
+      <ion-item>
+        <ion-icon class="margin" name="help-circle-outline"></ion-icon>
+        <ion-label>HELP</ion-label>
+        <ion-icon slot="end" size="medium" name="chevron-forward-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-icon class="margin" name="information-circle"></ion-icon>
+        <ion-label>ABOUT US</ion-label>
+        <ion-icon slot="end" size="medium" name="chevron-forward-outline"></ion-icon>
       </ion-item>
     </ion-list>
   </ion-content>

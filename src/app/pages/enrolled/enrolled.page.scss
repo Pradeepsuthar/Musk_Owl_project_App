@@ -1,0 +1,11 @@
+.app_body{
+    padding-top: 60px;
+}
+
+super-tabs-toolbar super-tab-button:first-child{
+    border-right: 1px solid #dee2e6;
+}
+
+super-tab-button.active{
+    border-bottom: 5px solid var(--ion-color-primary);
+}

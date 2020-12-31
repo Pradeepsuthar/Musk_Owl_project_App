@@ -1,60 +1,96 @@
-<!-- <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
-  </ion-toolbar>
-</ion-header> -->
-
-<ion-content >
-  <div class="card-div" fxLayoutAlign="center center">
-    <ion-card fxLayout="row" class="person-card">
-      <!-- <ion-item fxLayout="row"> -->
-        <div  fxLayoutAlign="start" class="img-div">
+<ion-content>
+  <div class="app_body">
+    <!-- Top user notify -->
+    <div class="user_notify_card" fxLayoutAlign="center center">
+      <ion-card fxLayout="row" class="person_card">
+        <div fxLayoutAlign="start" class="img_div">
           <img class="img-width" src="assets/images/macclary.jpg">
         </div>
-        
-          <ion-grid class="padding">
-            <ion-row style="height: 100%;">
-              <ion-col size="7" class="padding padding-left" fxLayoutAlign="center start" fxLayout="column">
-                <ion-card-subtitle class="card-subtitle">CLAUDIA JOHN</ion-card-subtitle>
-                <ion-card-title class="card-title"><b>ACCIDENT</b></ion-card-title>
-              </ion-col>
-              <ion-col size="5" class="padding" fxLayoutAlign="center start" fxLayout="column">
-                <ion-card-subtitle class="card-subtitle">4.5 K</ion-card-subtitle>
-                <ion-card-title class="card-title"><b>460 M</b></ion-card-title>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
-      <!-- </ion-item> -->
-    </ion-card>
-  </div>
-  <div #map id="map">
-  </div>
-  <div>
-    <ion-card class="card">
-      <ion-card-subtitle class="card-padding">Issue Details</ion-card-subtitle>
-      <ion-card-content class="card-content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</ion-card-content>
-    </ion-card>
-    <div fxLayout="row" fxLayoutAlign="space-around center" class="card-padding">
-      <div fxLayout="column">
-        <ion-icon class="icon" name="person-circle-outline"></ion-icon>
-        <ion-label fxLayoutAlign="center" class="icon-label">Givers</ion-label>
+        <ion-grid class="padding">
+          <ion-row style="height: 100%;">
+            <ion-col size="7" class="padding padding-left" fxLayoutAlign="center start" fxLayout="column">
+              <ion-card-subtitle class="card-subtitle">CLAUDIA JOHN</ion-card-subtitle>
+              <ion-card-title class="card-title"><b>ACCIDENT</b></ion-card-title>
+            </ion-col>
+            <ion-col size="5" class="padding" fxLayoutAlign="center start" fxLayout="column">
+              <ion-card-subtitle class="card-subtitle">4.5 K</ion-card-subtitle>
+              <ion-card-title class="card-title"><b>460 M</b></ion-card-title>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card>
+    </div>
+    <!-- Map -->
+    <div #map id="map"></div>
+
+    <div class="popup_card">
+      <div class="card_header">
+        <h4>Event Details</h4>
+        <span class="icon"><ion-icon name="chevron-down-outline"></ion-icon></span>
       </div>
-      <div fxLayout="column">
-        <ion-icon class="icon" name="images-outline"></ion-icon>
-        <!-- <ion-icon name="images-outline"></ion-icon> -->
-        <ion-label fxLayoutAlign="center" class="icon-label">View Media</ion-label>
+      <div class="card_body">
+        <p>
+          Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
+        </p>
       </div>
-      <div fxLayout="column">
-        <ion-icon class="icon" name="compass-outline"></ion-icon>
-        <!-- <ion-icon name="compass-outline"></ion-icon> -->
-        <ion-label fxLayoutAlign="center" class="icon-label">Get Direction</ion-label>
+      <div class="card_footer">
+        <div class="like_icon"><ion-icon name="heart"></ion-icon></div>
+        <div class="enrolled_btn">
+          <button type="button" class="btn btn-primary">Enroll</button>
+        </div>
       </div>
-      <div fxLayout="column">
-        <ion-icon class="icon"style="font-size: 42px !important;" name="close-circle-outline"></ion-icon>
-        <ion-label fxLayoutAlign="center" class="icon-label">Close Issue</ion-label>
+    </div>
+    <!-- Footer Menu -->
+    <div class="footer_menu_container">
+      <div class="footer__menu">
+        <div class="footer_menu_item">
+          <ion-icon class="icon" name="person-circle-outline"></ion-icon>
+          <span>Givers</span>
+        </div>
+        <div class="footer_menu_item">
+          <ion-icon class="icon" name="images-outline"></ion-icon>
+          <span>View Media</span>
+        </div>
+        <div class="footer_menu_item active">
+          <ion-icon class="icon" name="navigate-outline"></ion-icon>
+          <span>Get Direction</span>
+        </div>
+        <div class="footer_menu_item">
+          <ion-icon class="icon" name="close-circle-outline"></ion-icon>
+          <span>Close Issue</span>
+        </div>
+        <div class="footer_menu_item">
+          <ion-icon class="icon" name="person-circle-outline"></ion-icon>
+          <span>Givers</span>
+        </div>
+        <div class="footer_menu_item">
+          <ion-icon class="icon" name="images-outline"></ion-icon>
+          <span>View Media</span>
+        </div>
+        <div class="footer_menu_item">
+          <ion-icon class="icon" name="navigate-outline"></ion-icon>
+          <span>Get Direction</span>
+        </div>
+        <div class="footer_menu_item">
+          <ion-icon class="icon" name="close-circle-outline"></ion-icon>
+          <span>Close Issue</span>
+        </div>
+        <div class="footer_menu_item">
+          <ion-icon class="icon" name="person-circle-outline"></ion-icon>
+          <span>Givers</span>
+        </div>
+        <div class="footer_menu_item">
+          <ion-icon class="icon" name="images-outline"></ion-icon>
+          <span>View Media</span>
+        </div>
+        <div class="footer_menu_item">
+          <ion-icon class="icon" name="navigate-outline"></ion-icon>
+          <span>Get Direction</span>
+        </div>
+        <div class="footer_menu_item">
+          <ion-icon class="icon" name="close-circle-outline"></ion-icon>
+          <span>Close Issue</span>
+        </div>
       </div>
     </div>
   </div>

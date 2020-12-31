@@ -24,3 +24,28 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+
+:root{
+    --ion-color-primary: rgb(63, 177, 253);
+}
+
+ion-header{
+    ion-toolbar{
+        ion-title{
+            display: flex !important;
+            align-items: center !important;
+            a{
+                color: var(--ion-text-color);
+                text-decoration: none;
+                .back_btn{
+                    padding-top: 5px;
+                    margin-right: 15px;
+                }
+            }
+            span{
+                padding-bottom: 5px;
+            }
+        }
+    }
+}
